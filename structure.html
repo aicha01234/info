@@ -1,0 +1,188 @@
+  <!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Structure Machine</title>
+<style>
+  body {
+    background: #0a0a23; /* نفس خلفية صفحتك الرئيسية */
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  .btn {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+  }
+  .btn:hover {
+    background-color: #3742fa;
+  }
+  .content-section {
+    display: none;
+    margin-top: 20px;
+  }
+  .content-section.active {
+    display: block;
+  }
+  img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  pre {
+    background-color: #222244;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+</style>
+</head>
+<body>
+
+<h1>Structure Machine</h1>
+
+<div>
+  <button class="btn" onclick="showSection('cours')">Cours</button>
+  <button class="btn" onclick="showSection('exercices')">Exercices</button>
+  <button class="btn" onclick="showSection('corriges')">Corrigés</button>
+</div>
+
+<!-- Cours Section -->
+<div id="cours" class="content-section">
+  <h2>Cours - Chapitre 1</h2>
+  <img src="images/S1.png" alt="S1" />
+  <img src="images/S2.png" alt="S2" />
+  <img src="images/S4.png" alt="S4" />
+  <img src="images/S4.png" alt="S4" />
+  <img src="images/S5.png" alt="S5" />
+  <img src="images/S6.png" alt="S6" />
+  <img src="images/S7.png" alt="S7" />
+  <img src="images/S8.png" alt="S8" />
+  <img src="images/S9.png" alt="S9" />
+  <img src="images/S10.png" alt="S10" />
+  <img src="images/S11.png" alt="S11" />
+  
+  <h2>Cours - Chapitre 2</h2>
+  <img src="images/S01.png" alt="S01" />
+  <img src="images/S02.png" alt="S02" />
+  <img src="images/S03.png" alt="S03" />
+  <img src="images/S05.png" alt="S05" />
+  <img src="images/S06.png" alt="S06" />
+  <img src="images/S07.png" alt="S07" />
+  <img src="images/S08.png" alt="S08" />
+  <img src="images/S09.png" alt="S09" />
+  <img src="images/S12.png" alt="S12" />
+  <img src="images/S13.png" alt="S13" />
+  <img src="images/S14.png" alt="S14" />
+  <img src="images/S15.png" alt="S15" />
+</div>
+
+<!-- Exercices Section -->
+<div id="exercices" class="content-section">
+  <h2>Exercices</h2>
+  <pre>
+EXERCICE 1 :
+Considérez les suites de chiffres suivantes : 1010, 102, 1084, ABC, 1AFD, 2AG, HE2
+Lesquelles peuvent représenter un nombre en base 2, 8, ou 16 ?
+
+Base 2 : Seulement 1010.
+Base 8 : 1010, 102.
+Base 16 : 1010, 102, 1084, ABC, 1AFD.
+Quelle est la plus petite base pouvant représenter toutes ces suites ?
+
+Toutes peuvent être représentées en base 18.
+
+EXERCICE 2 :
+1- Convertir en décimal :
+(110111)2 = (55)10, (A4C1,D)16 = (42177.8125)10, (11001,0101)2 = (25.3125)10,
+(547,25)8 = (359.328125)10, (21,4)5 = (11.8)10.
+
+2- Représenter en binaire, octal, et hexadécimal :
+(316)10 = (100111100)2 = (474)8 = (13C)16,
+(112,175)10 = (1110000.001011001100...)2 = (160.1314...)8 = (70.2CCC...)16,
+(34,31)10 = (100010.010011110....)2 = (42.236...)8 = (22.4F...)16.
+
+EXERCICE 3 :
+A = (7365)8, B = (77,21)8, C = (F1E)16, D = (2DB,5)16.
+Convertir A et B en base 16 sans passer par la base 10 ?
+
+A = (EF5)16,
+B = (3F,44)16.
+Convertir C et D en base 8 sans passer par la base 10 ?
+
+C = (7436)8,
+D = (1333,24)8.
+
+EXERCICE 4 :
+Effectuer les opérations binaires :
+1- 110011101 + 10110111 = 1001010100;
+111001,1 + 11010,101 = 1010100.001;
+2- 1010001,01 − 101110,1 = 100010.11;
+1100101001 − 110110110 = 101110011;
+3- 110110 × 101 = 100001110;
+10111,011 × 101,1 = 10000000.1001;
+4- 1111001111 ÷ 1101 = 1001011;
+1110111111,11 ÷ 1011 = 1010111.01.
+  </pre>
+</div>
+
+<!-- Corrigés Section -->
+<div id="corriges" class="content-section">
+  <h2>Corrigés</h2>
+  <pre>
+EXERCICE 1 :
+Base 2 : Seulement 1010.
+Base 8 : 1010, 102.
+Base 16 : 1010, 102, 1084, ABC, 1AFD.
+Base minimale : 18.
+
+EXERCICE 2 :
+(110111)2 = (55)10,
+(A4C1,D)16 = (42177.8125)10,
+(11001,0101)2 = (25.3125)10,
+(547,25)8 = (359.328125)10,
+(21,4)5 = (11.8)10.
+
+(316)10 = (100111100)2 = (474)8 = (13C)16,
+(112,175)10 = (1110000.001011001100...)2 = (160.1314...)8 = (70.2CCC...)16,
+(34,31)10 = (100010.010011110....)2 = (42.236...)8 = (22.4F...)16.
+
+EXERCICE 3 :
+A = (EF5)16,
+B = (3F,44)16,
+C = (7436)8,
+D = (1333,24)8.
+
+EXERCICE 4 :
+110011101 + 10110111 = 1001010100;
+111001,1 + 11010,101 = 1010100.001;
+1010001,01 − 101110,1 = 100010.11;
+1100101001 − 110110110 = 101110011;
+110110 × 101 = 100001110;
+10111,011 × 101,1 = 10000000.1001;
+1111001111 ÷ 1101 = 1001011;
+1110111111,11 ÷ 1011 = 1010111.01.
+  </pre>
+</div>
+
+<script>
+function showSection(id) {
+  // Hide all sections
+  document.querySelectorAll('.content-section').forEach(section => {
+    section.classList.remove('active');
+  });
+  // Show the selected section
+  document.getElementById(id).classList.add('active');
+}
+// Show cours by default
+showSection('cours');
+</script>
+
+</body>
+</html>
